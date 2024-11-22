@@ -61,9 +61,9 @@ const Navbar = () => {
                             ))}
                         </ul>
                     </nav>
-                    <div className=" hidden md:flex  gap-6 items-center">
-                       
-                      <div className="w-12 h-12 rounded-full border-2 border-[#0B8632] p-[2px] flex justify-center items-center">
+                    <div className="  md:flex  gap-6 items-center">
+                       <input type="text" name="" id="" className="py-2 px-2 border border-[#0B8632] rounded-[5px] lg:w-[255px] outline-0" placeholder="search here"/>
+                      <div className="hidden   w-12 h-12 rounded-full border-2 border-[#0B8632] p-[2px] md:flex justify-center items-center">
                       <Image src='/user.png'></Image>
                       </div>
                        
