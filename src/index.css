@@ -5,3 +5,7 @@
 .active{
     @apply text-[#0B8632]
   }
+
+  .react-tabs__tab--selected{
+    color:#0B8632;
+   }

@@ -3,7 +3,7 @@ const AddProperty = ({handleSubmit}) => {
     return (
         <div>
             <form onSubmit={handleSubmit} action="">
-                <h2 className='text-[22px] text-[#282828] font-josefin font-semibold  capitalize p-3 border-l-2 border-[#0B8632]'>Add a new property</h2>
+                <h2 className='text-[22px]   font-josefin font-semibold  capitalize p-3 border-l-2 border-[#0B8632]'>Add a new property</h2>
                 <div className="flex gap-6 items-center justify-between mt-[50px] flex-col md:flex-row">
                     <input name='title' type='text' placeholder='property title' className=" w-full py-[13px] px-[11px] border outline-0 mt-2" />
                     <input name='image' type='file' placeholder='property image ' className=" w-full py-[13px] px-[11px] border outline-0 mt-2" />

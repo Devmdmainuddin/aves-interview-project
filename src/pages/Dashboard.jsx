@@ -64,6 +64,24 @@ const Dashboard = () => {
        
     }, []);
 
+ // Delete a property by index
+ const deleteProperty = (index) => {
+    const updatedProperties = properties.filter((_, idx) => idx !== index);
+    localStorage.setItem("properties", JSON.stringify(updatedProperties));
+    setProperties(updatedProperties);
+};
+
+// Update a property by index
+const updateProperty = (index, updatedData) => {
+    const updatedProperties = properties.map((property, idx) =>
+        idx === index ? { ...property, ...updatedData } : property
+    );
+    localStorage.setItem("properties", JSON.stringify(updatedProperties));
+    setProperties(updatedProperties);
+};
+
+
+
     const handleSubmit = async e => {
         e.preventDefault();
         const form = e.target;
@@ -101,7 +119,7 @@ const Dashboard = () => {
         <div className="my-[120px]">
             <Container>
             <AddProperty handleSubmit={handleSubmit}/>
-            <AllProperty propertyType={propertyType} handlefilter={handlefilter} handleStatus={handleStatus} handleByNew={handleByNew} handleByOld={handleByOld} item ={item} status={status}></AllProperty>
+            <AllProperty propertyType={propertyType} handlefilter={handlefilter} handleStatus={handleStatus} handleByNew={handleByNew} handleByOld={handleByOld} deleteProperty={deleteProperty} item ={item} status={status}></AllProperty>
             </Container>
             
         </div>
