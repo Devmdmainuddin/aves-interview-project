@@ -1,20 +1,5 @@
 
-const AddProperty = () => {
-
-    const handleSubmit = async e => {
-        e.preventDefault();
-
-        const form = e.target;
-        const category = form.category.value;
-
-
-        const info = {
-            category: category,
-            userInfo: userInfo
-        }
-
-    }
-
+const AddProperty = ({handleSubmit}) => {
     return (
         <div>
             <form onSubmit={handleSubmit} action="">
@@ -29,7 +14,7 @@ const AddProperty = () => {
                 </div>
                 <div className="flex gap-6 items-center justify-between flex-col md:flex-row">
                     <input name='location' type='text' placeholder='property location ' className=" w-full py-[13px] px-[11px] border outline-0 mt-2" />
-                    <select name="" id="" className="w-full py-[13px] px-[11px] border outline-0 mt-2">
+                    <select name="propertyType" id="" className="w-full py-[13px] px-[11px] border outline-0 mt-2">
                         <option value="">Select Property Type</option>
                         <option value="house">House</option>
                         <option value="apartment">Apartment</option>
@@ -41,7 +26,7 @@ const AddProperty = () => {
                 </div>
                 <div className="flex gap-6 items-center justify-between flex-col md:flex-row">
 
-                    <select name="" id="" className="w-full py-[13px] px-[11px] border outline-0 mt-2">
+                    <select name="status" id="" className="w-full py-[13px] px-[11px] border outline-0 mt-2">
                         <option value="">Select Property Status</option>
                         <option value="rented">Rented</option>
                         <option value="sold">Sold</option>
@@ -49,7 +34,7 @@ const AddProperty = () => {
                         <option value="under_construction">Under Construction</option>
                         <option value="other">Other</option>
                     </select>
-                    <select name="" id="" className="w-full py-[13px] px-[11px] border outline-0 mt-2">
+                    <select name="condition" id="" className="w-full py-[13px] px-[11px] border outline-0 mt-2">
                         <option value="">Select Property Condition</option>
                         <option value="new">New</option>
                         <option value="used">Used</option>
@@ -64,6 +49,7 @@ const AddProperty = () => {
 
                 <button type='submit' className="text-white bg-[#0B8632] font-josefin text-[14px] rounded-[3px] border border-[#0B8632] px-[20px] py-[10px] mt-6 uppercase" >submit</button>
             </form>
+
         </div>
     );
 };
