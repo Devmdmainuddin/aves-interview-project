@@ -1,9 +1,7 @@
 
 # Property Management Dashboard
+Property save in localstorage  , first data saved in localstorage , then get all data in localstorage and show all data by default in all properties cards. 
 
-it's a AScholarship Management System website
-where student can search there suitable university and Scholarship also they can
-apply for the scholarship through our Scholarship Management System.
 
 
 
@@ -20,7 +18,7 @@ Install my-project with npm
     
 ## website live link 
 
-
+[https://aves-interview.netlify.app/](https://aves-interview.netlify.app/)
 
 
 ## Features
@@ -29,7 +27,7 @@ Install my-project with npm
 - Add property in localstorage
 - Show property ,
 - Delete property ,
--  Filter properties by type
+- Filter properties by type
 - Sort properties by old and new properties
 - Sort properties by rental Status
 - Footer
@@ -39,10 +37,14 @@ Install my-project with npm
 This project is used by the following  
 
 - react-icons
-- react-toastify
-
+- react-router-dom
+- axios
+- react-hot-toast
+- react-tabs
 
 
 ## Authors
 
 - [@devmdmainuddin](https://github.com/Devmdmainuddin)
+##  portfolio
+- [portfolio](https://my-portfolio-m.web.app/)
