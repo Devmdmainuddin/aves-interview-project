@@ -26,6 +26,8 @@ Install my-project with npm
 - Navbar
 - Add property in localstorage
 - Show property ,
+- searchbar function add ,
+- properties status count ,
 - Delete property ,
 - Filter properties by type
 - Sort properties by old and new properties

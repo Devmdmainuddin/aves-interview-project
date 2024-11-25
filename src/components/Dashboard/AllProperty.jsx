@@ -79,8 +79,8 @@ const AllProperty = ({ propertyType, status, handlefilter, deleteProperty, handl
                                         </div>
                                     </div>
                                     <div className="flex ">
-                                        <button onClick={() => deleteProperty(index)} className="w-full bg-[#6df0d6] py-2">Delete</button>
-                                        <Link > <button className="w-full bg-[#6df0d6] py-2">show details</button></Link>
+                                        <button onClick={() => deleteProperty(index)} className="w-1/2 border  py-2 ">Delete</button>
+                                        <Link className='w-1/2 border'> <button className="w-full text-white bg-[#6df0d6] py-2 ">show details</button></Link>
                                     </div>
 
 

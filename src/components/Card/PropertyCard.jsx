@@ -37,8 +37,8 @@ const PropertyCard = ({ property, index, deleteProperty }) => {
                     </div>
                 </div>
                 <div className="flex ">
-                    <button onClick={() => deleteProperty(index)} className="w-full bg-[#6df0d6] py-2">Delete</button>
-                    <Link > <button className="w-full bg-[#6df0d6] py-2">show details</button></Link>
+                    <button onClick={() => deleteProperty(index)} className=" text-[#6df0d6] border border-[#6df0d6] py-2">Delete</button>
+                    <Link > <button className=" bg-[#29f8c5] py-2">show details</button></Link>
                 </div>
 
 
